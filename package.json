@@ -1,0 +1,22 @@
+{
+  "name": "reframe",
+  "version": "0.0.1",
+  "description": "Reframes semantic triples.",
+  "main": "reframe.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Holdy/reframe.git"
+  },
+  "author": "Chris H <chris.holden@rainbird.ai>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Holdy/reframe/issues"
+  },
+  "homepage": "https://github.com/Holdy/reframe"
+}

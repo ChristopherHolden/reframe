@@ -20,14 +20,14 @@ describe('textLib', function() {
 
     it ('should handle aCamelCasePhrase', function(done) {
         var result = lib.splitWords('aCamelCasePhrase');
-        expect(result).to.eql(['a','Camel', 'Case', 'Phrase']);
+        expect(result).to.eql(['a','camel', 'case', 'phrase']);
 
         done();
     });
 
     it ('should handle aMixed bag', function(done) {
         var result = lib.splitWords('should handle aMixed bag');
-        expect(result).to.eql(['should','handle', 'a', 'Mixed', 'bag']);
+        expect(result).to.eql(['should','handle', 'a', 'mixed', 'bag']);
 
         done();
     });

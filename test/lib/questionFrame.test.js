@@ -177,7 +177,25 @@ describe('questionFrame', function() {
         });
     });
 
-    //todo planet hadDiameter size
+    it('should process a past-tense inanimate-property triple', function(done) {
+
+        lib.process({
+            'subject':'Planet',
+            'relationship': 'hadDiameter',
+            'object': 'size'}, function(err, result) {
+
+            expect(err).to.not.be.ok;
+            expect(result['query-fact']).to.equal('Was the diameter of {S} {O}?');
+            expect(result['query-subject-plural']).to.equal('Which planets had a diameter of {O}?'); // todo
+            expect(result['query-subject-singular']).to.equal('Which planet had a diameter of {O}?');
+            expect(result['query-object-singular']).to.equal('Which size was the diameter of {S}?');
+            expect(result['query-object-plural']).to.equal('Which sizes were the diameters of {S}?');
+
+            done();
+        });
+    });
+
+
 
     it('should process a simple inanimate-property triple', function(done) {
 

@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/Holdy/reframe/issues"
   },
-  "homepage": "https://github.com/Holdy/reframe"
+  "homepage": "https://github.com/Holdy/reframe",
+  "dependencies": {
+    "node-wordnet": "0.1.x",
+    "pluralize": "3.0.x",
+    "wndb-with-exceptions": "3.0.x"
+  }
 }

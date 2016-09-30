@@ -1,5 +1,5 @@
 {
-  "name": "reframe",
+  "name": "triple-reframe",
   "version": "0.0.2",
   "description": "Reframes semantic triples.",
   "main": "reframe.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Holdy/reframe.git"
+    "url": "git://github.com/ChristopherHolden/reframe.git"
   },
   "author": "Chris H <chris.holden@rainbird.ai>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Holdy/reframe/issues"
+    "url": "https://github.com/ChristopherHolden/reframe/issues"
   },
-  "homepage": "https://github.com/Holdy/reframe",
+  "homepage": "https://github.com/ChristopherHolden/reframe",
   "dependencies": {
     "node-wordnet": "0.1.x",
     "pluralize": "3.0.x",

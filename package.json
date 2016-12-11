@@ -1,6 +1,6 @@
 {
   "name": "triple-reframe",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Reframes semantic triples.",
   "main": "reframe.js",
   "directories": {
@@ -23,6 +23,6 @@
     "node-wordnet": "0.1.x",
     "pluralize": "3.0.x",
     "wndb-with-exceptions": "3.0.x",
-    "corefoo-nlp": "0.0.x"
+    "corefoo-nlp": "~0.0.2"
   }
 }

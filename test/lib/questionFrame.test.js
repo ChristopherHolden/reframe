@@ -24,6 +24,80 @@ describe('questionFrame', function() {
         });
     });
 
+    it('should process the person-likes-person triple', function(done) {
+
+        lib.process({
+            'subject':'Person',
+            'relationship': 'Likes',
+            'object': 'Person'}, function(err, result) {
+
+            expect(err).to.not.be.ok;
+            expect(result['query-fact']).to.equal('Does {S} like {O}?');
+            expect(result['query-subject-plural']).to.equal('Which people like {O}?');
+            expect(result['query-subject-singular']).to.equal('Who likes {O}?');
+            expect(result['query-object-singular']).to.equal('Who does {S} like?');
+            expect(result['query-object-plural']).to.equal('Who does {S} like?');
+
+            done();
+        });
+    });
+
+    it('should process the dish-contains-ingredient triple', function(done) {
+
+        lib.process({
+            'subject':'dish',
+            'relationship': 'contains',
+            'object': 'ingredient'}, function(err, result) {
+
+            expect(err).to.not.be.ok;
+            expect(result['query-fact']).to.equal('Does {S} contain {O}?');
+            expect(result['query-subject-plural']).to.equal('Which dishes contain {O}?');
+            expect(result['query-subject-singular']).to.equal('Which dish contains {O}?');
+            expect(result['query-object-singular']).to.equal('Which ingredient does {S} contain?');
+            expect(result['query-object-plural']).to.equal('Which ingredients does {S} contain?');
+
+            done();
+        });
+    });
+
+    it('should process the fruit-grows-season triple', function(done) {
+
+        lib.process({
+            'subject':'fruit',
+            'relationship': 'grows',
+            'object': 'season'}, function(err, result) {
+
+            expect(err).to.not.be.ok;
+            expect(result['query-fact']).to.equal('Does {S} grow {O}?');
+            expect(result['query-subject-plural']).to.equal('Which fruits grow {O}?');
+            expect(result['query-subject-singular']).to.equal('Which fruit grows {O}?');
+            expect(result['query-object-singular']).to.equal('Which season does {S} grow?');
+            expect(result['query-object-plural']).to.equal('Which seasons does {S} grow?');
+
+            done();
+        });
+    });
+
+
+    it('should process the fruit-grows-in-season triple', function(done) {
+
+        lib.process({
+            'subject':'fruit',
+            'relationship': 'grows in',
+            'object': 'season'}, function(err, result) {
+
+            expect(err).to.not.be.ok;
+            expect(result['query-fact']).to.equal('Does {S} grow in {O}?');
+            expect(result['query-subject-plural']).to.equal('Which fruits grow in {O}?');
+            expect(result['query-subject-singular']).to.equal('Which fruit grows in {O}?');
+            expect(result['query-object-singular']).to.equal('Which season is grown in by {S}?');
+            expect(result['query-object-plural']).to.equal('Which seasons are grew in by {S}?');
+
+            done();
+        });
+    });
+
+
     it('should process the has-national-language triple', function(done) {
 
         lib.process({

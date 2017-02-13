@@ -1,6 +1,6 @@
 {
   "name": "triple-reframe",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Reframes semantic triples.",
   "main": "reframe.js",
   "directories": {
@@ -20,9 +20,7 @@
   },
   "homepage": "https://github.com/ChristopherHolden/reframe",
   "dependencies": {
-    "node-wordnet": "0.1.x",
     "pluralize": "3.0.x",
-    "wndb-with-exceptions": "3.0.x",
     "corefoo-nlp": "~0.0.2"
   }
 }

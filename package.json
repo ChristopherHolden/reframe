@@ -1,6 +1,6 @@
 {
   "name": "triple-reframe",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Reframes semantic triples.",
   "main": "reframe.js",
   "directories": {

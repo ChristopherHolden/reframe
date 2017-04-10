@@ -1,6 +1,6 @@
 {
   "name": "triple-reframe",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Reframes semantic triples.",
   "main": "reframe.js",
   "directories": {
@@ -21,6 +21,9 @@
   "homepage": "https://github.com/ChristopherHolden/reframe",
   "dependencies": {
     "pluralize": "3.0.x",
-    "corefoo-nlp": "~0.0.2"
+    "corefoo-nlp": "0.1.x"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
